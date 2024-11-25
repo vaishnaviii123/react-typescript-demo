@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Greet } from "./components/Greet";
+import { Heading } from "./components/Heading";
+import { Person } from "./components/Person";
+import { PersonList } from "./components/PersonList";
+import { Status } from "./components/Status";
+import { Button } from "./components/Button";
+import { Container } from "./components/Container";
 
 function App() {
+  const nameList = [
+    {
+      first: "vaishnavi",
+      last: "patil",
+    },
+    {
+      first: "John",
+      last: "Doe",
+    },
+    {
+      first: "Jane",
+      last: "Smith",
+    },
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Greet name="John" massageCount={20} isLoggedIn={true} />
+      <Person firstName="vaishnavi" lastName="patil" />
+      <PersonList names={nameList} />
+      <Status status="loading"/>
+      <Heading>Placeholder text</Heading> */}
+      {/* <Button handleClick={()=>{console.log('button Clicked')}}/> */}
+      <Container styles={{border:'1px solid black',padding:'1rem'}}/>
     </div>
   );
 }
