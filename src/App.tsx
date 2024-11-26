@@ -6,6 +6,7 @@ import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
 import { Button } from "./components/Button";
 import { Container } from "./components/Container";
+import { Toast } from "./components/Toast";
 
 function App() {
   const nameList = [
@@ -30,7 +31,8 @@ function App() {
       <Status status="loading"/>
       <Heading>Placeholder text</Heading> */}
       {/* <Button handleClick={()=>{console.log('button Clicked')}}/> */}
-      <Container styles={{border:'1px solid black',padding:'1rem'}}/>
+      {/* <Container styles={{border:'1px solid black',padding:'1rem'}}/> */}
+      <Toast position="center"/> 
     </div>
   );
 }
